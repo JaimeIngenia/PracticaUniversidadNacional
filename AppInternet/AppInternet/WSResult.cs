@@ -6,11 +6,11 @@ namespace AppInternet
 {
     public class WSResult
     {
-        public string current { get; set; }
-        public string uptime { get; set; }
+        //public string current { get; set; }
+        //public string uptime { get; set; }
 
-        //public string corriente { get; set; }
-        //public string tiempo { get; set; }
+        public string corriente { get; set; }
+        public string tiempo { get; set; }
 
 
     }

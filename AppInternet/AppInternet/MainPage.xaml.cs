@@ -25,16 +25,16 @@ namespace AppInternet
         {
             WSClient client = new WSClient();
             List<Datachart> datachartList = new List<Datachart>();
-            d = await client.Get<WSResult>("https://gensyslabs.net/listado_panel.php?h=2");//https://gensyslabs.net/listado3.php
+            d = await client.Get<WSResult>("https://gensyslabs.net/listado3.php");//https://gensyslabs.net/listado3.php//https://gensyslabs.net/listado3.php****https://gensyslabs.net/listado_panel.php?h=2//http://practica2020.ml/prueba1.php
             foreach (var item in d)
             {
-                Datachart x = new Datachart(float.Parse(item.current))//.corriente
+                Datachart x = new Datachart(float.Parse(item.corriente))//.current
                 {
                     Color = SkiaSharp.SKColor.Parse("#ff92a0"),
                     TextColor = SkiaSharp.SKColor.Parse("#ff92a0"),
-                    Label = item.uptime,//tiempo
+                    Label = item.tiempo,//tiempo,uptime
                    
-                    ValueLabel = item.uptime//tiempo
+                    ValueLabel = item.tiempo//tiempo,uptime
                 };
 
                 datachartList.Add(x);

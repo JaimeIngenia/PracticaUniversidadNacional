@@ -8,9 +8,9 @@
              x:Class="AppInternet.MainPage">
 
     <StackLayout Orientation="Vertical">
-        <Button x:Name="BtnCallWS" Text="Call Web Service" 
+        <Button x:Name="BtnCallWS" Text="Mundo SOS" 
                     Clicked="BtnCallWS_Click" 
-                    BackgroundColor="#71d349" 
+                    BackgroundColor="#0D6E87" 
                     TextColor="White" 
                     BorderRadius="20"/>
 
